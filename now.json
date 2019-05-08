@@ -1,0 +1,5 @@
+{
+  "version": 2,
+  "name": "my-next-poc",
+  "builds": [{ "src": "package.json", "use": "@now/next" }]
+}
