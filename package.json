@@ -6,8 +6,7 @@
   "scripts": {
     "build": "next build ./src",
     "deploy": "yarn run build && sls deploy",
-    "dev": "next ./src",
-    "now-build": "next build ./src"
+    "dev": "next ./src"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",

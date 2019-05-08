@@ -7,10 +7,12 @@ secrets.json
 # testing
 /coverage
 
-# production
+# production files
+.serverless
 /build
 .next/
 
+# Local error files
 yarn-debug.log*
 yarn-error.log*
 sh.exe.stackdump
