@@ -9,7 +9,11 @@ provider:
 
 functions:
   server:
-    handler: index.server
+    handler: src/server/index.server
     events:
       - http:
-          method: get
+          path: /
+          method: ANY
+      - http:
+          path: /{any+}
+          method: ANY

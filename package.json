@@ -7,7 +7,8 @@
     "build": "next build ./src",
     "deploy:beta": "yarn run build && cross-env NODE_ENV=beta sls deploy",
     "deploy:prod": "yarn run build && cross-env NODE_ENV=prod sls deploy",
-    "dev": "next ./src"
+    "dev": "next ./src",
+    "start": "yarn build && cross-env NODE_ENV=prod node ./src/server"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -17,7 +18,6 @@
     "node-sass": "^4.11.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "serverless": "^1.41.1",
-    "serverless-http": "^2.0.1"
+    "serverless": "^1.41.1"
   }
 }
