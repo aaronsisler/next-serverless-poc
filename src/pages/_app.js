@@ -2,6 +2,7 @@ import React from "react";
 import App, { Container } from "next/app";
 import Head from "next/head";
 import Navbar from "../components/navbar";
+import "../styles/app.scss";
 
 class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
