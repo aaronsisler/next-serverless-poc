@@ -8,10 +8,10 @@ class Params extends React.Component {
   render() {
     const { query } = this.props;
     return (
-      <div>
+      <main>
         <h2>This is the Params Page</h2>
         <h5>Query: {query.projectId}</h5>
-      </div>
+      </main>
     );
   }
 }

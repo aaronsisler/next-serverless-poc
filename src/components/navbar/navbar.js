@@ -5,6 +5,7 @@ import "./navbar.scss";
 class Navbar extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       isNavOpen: false,
       projectId: "taco"
@@ -16,22 +17,23 @@ class Navbar extends React.Component {
 
   render() {
     const { isNavOpen, projectId } = this.state;
+
     return (
-      <nav className="nav_menu">
-        <div className="nav_menu__content">
+      <nav className="navbar">
+        <div className="navbar__content">
           <h2>This is the Navbar</h2>
           <h5>Navbar open is: {`${isNavOpen}`}</h5>
           <button onClick={this.handleToggle}>Toggle Navbar</button>
         </div>
-        <div className="nav_menu__links">
-          <Link href="/" as="/">
-            <div className="menu">Home</div>
+        <div className="navbar__links">
+          <Link href="/">
+            <div className="navbar__link">Home</div>
           </Link>
           <Link href={{ pathname: "/params", query: { projectId } }}>
-            <div className="menu">Params</div>
+            <div className="navbar__link">Params</div>
           </Link>
           <Link href="/contact-us">
-            <div className="menu">Contact Us</div>
+            <div className="navbar__link">Contact Us</div>
           </Link>
         </div>
       </nav>
