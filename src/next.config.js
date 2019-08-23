@@ -1,7 +1,6 @@
 const withSass = require("@zeit/next-sass");
 
 module.exports = withSass({
-  target: "serverless",
   distDir: "../.next",
   webpack(config) {
     config.module.rules.push({
