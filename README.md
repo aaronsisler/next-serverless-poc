@@ -5,10 +5,12 @@ This is a working example of [Next.js](https://nextjs.org) and [Serverless](http
 This basic site is deployable to AWS using API Gateway and Lambda functions.
 
 - [x] Working Basic App
-- [ ] Working Normalize
+- [ ] Working Normalize and no weird top space
 - [x] Working Serverless Deployment
-- [ ] Working static file/image pathing
-- [ ] Working page pathing
-- [ ] No console errors about "as" and page preloading
+- [x] Working page pathing
+- [x] Working static file pathing
+- [ ] Working static image pathing
+- [x] No console errors about "as" and page preloading
+- [ ] No console errors about font files not loading
 - [ ] No console errors
 - [ ] TBD
