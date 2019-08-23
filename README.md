@@ -10,7 +10,7 @@ This basic site is deployable to AWS using API Gateway and Lambda functions.
 - [x] Working page pathing
 - [x] Working static file pathing
 - [ ] Working static image pathing
-- [x] No console errors about "as" and page preloading
-- [ ] No console errors about font files not loading
+- [ ] No console errors about "as" and page preloading
+- [x] No console errors about font files not loading
 - [ ] No console errors
 - [ ] TBD

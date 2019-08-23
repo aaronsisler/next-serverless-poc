@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build ./src",
+    "build": "rm -rf ./.next && next build ./src",
     "deploy": "yarn build && sls deploy",
     "start": "next ./src"
   },
