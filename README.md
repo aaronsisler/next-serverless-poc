@@ -15,8 +15,8 @@ This basic site is deployable to AWS using API Gateway and Lambda functions.
 - [x] Working Serverless Deployment
 - [x] Working page pathing
 - [x] Working static file pathing
-- [ ] Working static image pathing (favicon.ico) (works locally)
-- [ ] Working static image folder pathing (favicon.ico within "static/images" folder )
+- [x] Working static image pathing (favicon.ico)
+- [x] Working static image folder pathing (favicon.ico within "static/images" folder )
 - [ ] No console errors about "as" and page preloading
 - [x] No console errors about font files not loading
 - [ ] No console errors

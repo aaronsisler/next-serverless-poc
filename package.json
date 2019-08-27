@@ -6,7 +6,7 @@
     "build": "yarn clear-next && next build ./src",
     "clear-next": "rm -rf ./.next",
     "clear-serverless": "rm -rf ./.serverless",
-    "deploy": "yarn build && sls deploy && yarn clear-serverless",
+    "deploy": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
     "start": "yarn clear-next && next ./src"
   },
   "engines": {
