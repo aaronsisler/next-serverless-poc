@@ -1,6 +1,4 @@
 const withSass = require("@zeit/next-sass");
-const withImages = require("next-images");
-const withPlugins = require("next-compose-plugins");
 
 const nextConfig = {
   distDir: "../.next"
@@ -22,34 +20,20 @@ const sassConfig = {
 const imagesConfig = {
   test: /\.(ico)$/,
   use: {
-    loader: "url-loader",
+    loader: "file-loader",
     options: {
-      limit: 100000,
       name: "[name]-[hash].[ext]",
       outputPath: "static/images",
-      publicPath: "../images"
+      publicPath: "_next/static/images"
     }
   }
 };
-
-// module.exports = withPlugins([[withSass, sassConfig]], nextConfig);
-
-// module.exports = withSass(
-//   withImages({
-//     ...nextConfig,
-//     webpack(config) {
-//       config.module.rules.push(sassConfig);
-//       config.module.rules.push(imagesConfig);
-
-//       return config;
-//     }
-//   })
-// );
 
 module.exports = withSass({
   ...nextConfig,
   webpack(config) {
     config.module.rules.push(sassConfig);
+    config.module.rules.push(imagesConfig);
 
     return config;
   }
