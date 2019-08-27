@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "rm -rf ./.next && next build ./src",
-    "deploy": "yarn build && sls deploy",
-    "start": "next ./src"
+    "build": "yarn clear-next && next build ./src",
+    "clear-next": "rm -rf ./.next",
+    "clear-serverless": "rm -rf ./.serverless",
+    "deploy": "yarn build && sls deploy && yarn clear-serverless",
+    "start": "yarn clear-next && next ./src"
   },
   "engines": {
     "node": ">=10.15.1",
@@ -17,6 +19,8 @@
     "express": "^4.16.4",
     "file-loader": "^4.2.0",
     "next": "^9.0.3",
+    "next-compose-plugins": "^2.2.0",
+    "next-images": "^1.1.2",
     "node-sass": "^4.12.0",
     "normalize-scss": "^7.0.1",
     "path-match": "^1.2.4",

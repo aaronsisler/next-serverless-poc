@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
+// import img from "../static/images/favicon.ico";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -10,10 +11,15 @@ class MyDocument extends Document {
     return (
       <Html lang="en-US">
         <Head>
-          <link
+          {/* <link rel="icon" type="image/x-icon" href={img} /> */}
+          {/* <link
             rel="icon"
             type="image/x-icon"
             href="./static/images/favicon.ico"
+          /> */}
+          <meta
+            name="viewport"
+            content="initial-scale=1.0, width=device-width"
           />
         </Head>
         <body>
