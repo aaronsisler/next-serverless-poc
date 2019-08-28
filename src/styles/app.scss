@@ -9,17 +9,17 @@
 @media only screen {
   * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
   }
   html {
     font-size: 62.5%;
     height: 100%;
-    margin: 0;
   }
   body {
     @include font-type();
 
     height: 100%;
-    margin: 0;
   }
   h1,
   h2,

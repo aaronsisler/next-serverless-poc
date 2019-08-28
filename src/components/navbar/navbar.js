@@ -26,13 +26,13 @@ class Navbar extends React.Component {
           <button onClick={this.handleToggle}>Toggle Navbar</button>
         </div>
         <div className="navbar__links">
-          <Link href="/" prefetch>
+          <Link href="/">
             <div className="navbar__link">Home</div>
           </Link>
-          <Link href={{ pathname: "/params", query: { projectId } }} prefetch>
+          <Link href={{ pathname: "/params", query: { projectId } }}>
             <div className="navbar__link">Params</div>
           </Link>
-          <Link href="/contact-us" prefetch>
+          <Link href="/contact-us">
             <div className="navbar__link">Contact Us</div>
           </Link>
         </div>

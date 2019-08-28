@@ -11,7 +11,8 @@ This basic site is deployable to AWS using API Gateway and Lambda functions.
 ### Task list
 
 - [x] Working Basic App
-- [ ] Working Normalize and no weird top space
+- [x] Working Normalize
+- [x] No weird top/side space
 - [x] Working Serverless Deployment
 - [x] Working page pathing
 - [x] Working static file pathing
