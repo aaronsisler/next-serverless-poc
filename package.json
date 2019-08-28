@@ -1,10 +1,13 @@
 {
-  "name": "next-poc",
-  "version": "0.2.0",
+  "name": "next-serverless-poc",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build ./src",
-    "start": "next ./src"
+    "build": "yarn clear-next && next build ./src",
+    "clear-next": "rm -rf ./.next",
+    "clear-serverless": "rm -rf ./.serverless",
+    "deploy": "yarn build && sls deploy && yarn clear-serverless && yarn clear-next",
+    "start": "yarn clear-next && next ./src"
   },
   "engines": {
     "node": ">=10.15.1",
@@ -12,6 +15,7 @@
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
+    "express": "^4.16.4",
     "file-loader": "^4.2.0",
     "next": "^9.0.3",
     "node-sass": "^4.12.0",
@@ -19,6 +23,9 @@
     "prop-types": "^15.6.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "serverless-apigw-binary": "^0.4.4",
+    "serverless-domain-manager": "^2.6.0",
+    "serverless-http": "^1.6.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.39.2"
   },
